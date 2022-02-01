@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApiConsumerApp.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <ScrollView>
+        <StackLayout>
+            <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,Auto,*" Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+                <Entry Grid.Row="0" Text="{Binding RegisterUserName}" Placeholder="Enter user name..." />
+                <Entry Grid.Row="1" Text="{Binding RegisterEmail}" Placeholder="Enter email address..." />
+                <Entry Grid.Row="2" Text="{Binding RegisterPassword}" Placeholder="Enter password..." />
+                <Button Grid.Row="3" Text="Register User"  FontAttributes="Bold" Command="{Binding RegisterUserCommand}" HorizontalOptions="FillAndExpand" />
+                <Label Grid.Row="4"  Text="{Binding RegisterUserMessage}"/>
+            </Grid>
+            <BoxView HeightRequest="5" Color="#00000" />
+            <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,*" Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+                <Entry Grid.Row="0" Text="{Binding LoginUserName}" Placeholder="Enter user name..." />
+                <Entry Grid.Row="1" Text="{Binding LoginPassword}" Placeholder="Enter password..." />
+                <Button Grid.Row="2"  Text="Login User"  FontAttributes="Bold" Command="{Binding LoginUserCommand}" HorizontalOptions="FillAndExpand" />
+                <Label Grid.Row="3"  Text="{Binding LoginUserMessage}"/>
+            </Grid>
+            <BoxView HeightRequest="5" Color="#00000" />
+            <Grid RowSpacing="25" RowDefinitions="Auto,*" Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+                <Button Text="Get WeatherForecast" FontAttributes="Bold" Command="{Binding GetWeatherForecastCommand}" HorizontalOptions="FillAndExpand" />
+                <Label Grid.Row="1"  Text="{Binding WeatherForecastMessage}"/>
+                
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
