@@ -1,1 +1,1 @@
-# ConsumeDotNET6WebAPIfromDotNETMaui
+# Consume a .NET 6 WebAPI from .NET MAUI
