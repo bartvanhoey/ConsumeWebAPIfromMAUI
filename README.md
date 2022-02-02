@@ -1,4 +1,4 @@
-# Consume a ASP.NET Core 6.0 WebAPI from .NET MAUI
+# Consume an ASP.NET Core 6.0 WebAPI from .NET MAUI
 
 In this repository, you will find an **ASP.NET Core WebAPI application** that implements **JWT authentication** and a **.NET MAUI application** that consumes the protected WebAPI.
 
