@@ -52,7 +52,7 @@ After running the **dotnet watch** command a **Swagger page with API endpoints**
 
 Because you are running the WebAPI application on your local computer, the register API endpoint is reachable on [https://localhost:\<your-port-number\>/api/authentication/register](https://localhost:<your-port-number>/api/authentication/register).
 
-Although you can test out the API endpoints on your local machine, it will fail in .NET MAUI or Xamarin.Forms applications. They interpret the localhost address as their own localhost address (mobile device or handy) and not the localhost address of your computer.
+Although you can test out the API endpoints on your local machine, it will fail in .NET MAUI or Xamarin.Forms applications. They interpret the localhost address as their own localhost address (mobile device or emulator) and not the localhost address of your computer.
 
 To overcome this problem you can **make use of ngrok**. With ngrok you can **mirror your localhost address to a publicly available url**.
 
