@@ -112,3 +112,7 @@ Run the **ApiConsumerApp** and test it out in the following order.
 ## Conclusion
 
 In this article, we have seen how to consume a **.NET 6.0 ASP.NET Core Web API protected by JWT Authentication** with a **.NET MAUI app**.
+
+Best regards,
+
+Bart Van Hoey
