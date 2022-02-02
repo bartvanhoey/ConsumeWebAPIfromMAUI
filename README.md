@@ -21,7 +21,7 @@ Make sure you install following workloads:
 Open a command prompt in your computer and enter the command below:
 
 ```bash
-    git clone https://github.com/bartvanhoey/ConsumeDotNET6WebAPIfromDotNETMAUI.git
+    git clone https://github.com/bartvanhoey/ConsumeWebAPIfromMAUI.git
 ```
 
 ### Setup and run WebAPI
@@ -30,10 +30,9 @@ Open a command prompt in your computer and enter the command below:
 
 First, you need to create the database and tables needed before running the application.
 
-Open a **command prompt** in the **root folder of the WebAPI project** and run the commands below to add migrations and apply migrations to the database.
+Open a **command prompt** in the **root folder of the WebAPI project** and run the command below to apply the **Initial** migration to the database.
 
 ```bash
-    dotnet ef migrations add InitialMigration
     dotnet ef database update
 ```
 
@@ -89,12 +88,13 @@ Open the  **MainViewModel** in the **ViewModels folder** and **replace the BaseU
 
 #### Run the .NET MAUI app
 
+![MainPage .NET Maui app](Images/maui_app.jpg)
+
 In the **MainViewModel** class of the .NET MAUI app. you find **the 3 main methods** of the application. These 3 methods make a call to the WebAPI endpoints
 
 * **RegisterUserAsync()** calls the **{BaseUrl}/api/authentication/register** API endpoint
 * **LoginUserAsync()** calls the **{BaseUrl}/api/authentication/login** API endpoint (receives accesstoken from API)
 * **GetWeatherForecastAsync()** calls the **{BaseUrl}/api/weatherforecast** API endpoint
-
 
 Run the **ApiConsumerApp** and test it out in the following order.
 
@@ -103,7 +103,7 @@ Run the **ApiConsumerApp** and test it out in the following order.
 3. Login with the credentials of the registered User ->  You will receive a **User successfully logged in!** message.
 4. Click **Get WeatherForecast** button -> You will receive a **Weather forecast** message
 
-![MainPage .NET Maui app](Images/maui_app.jpg)
+![Http Requests in ngrok terminal](Images/htttp_requests_in_ngrok_terminal.jpg)
 
 ## Conclusion
 
