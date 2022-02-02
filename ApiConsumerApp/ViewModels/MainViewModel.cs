@@ -10,7 +10,7 @@ namespace ApiConsumerApp.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        private const string BaseUrl = "https://dc3e-2a02-810d-98c0-576c-106-e64b-6cb1-80a4.eu.ngrok.io";
+        private const string BaseUrl = "https://f7db-2a02-810d-98c0-576c-647e-cd22-5b-e9a3.eu.ngrok.io";
         private ICommand _registerUserCommand, _loginUserCommand, _getWeatherForecastCommand;
         private HttpClient _httpClient;
         private string _registerUserName, _registerPassword, _registerEmail, _loginUserName, _loginPassword, _weatherForecastMessage, _registerUserMessage, _loginUserMessage;
