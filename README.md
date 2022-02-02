@@ -103,7 +103,7 @@ Run the **ApiConsumerApp** and test it out in the following order.
 3. Login with the credentials of the registered User ->  You will receive a **User successfully logged in!** message.
 4. Click **Get WeatherForecast** button -> You will receive a **Weather forecast** message
 
-![Http Requests in ngrok terminal](Images/htttp_requests_in_ngrok_terminal.jpg)
+![Http Requests in ngrok terminal](Images/http_requests_in_ngrok_terminal.jpg)
 
 ## Conclusion
 
