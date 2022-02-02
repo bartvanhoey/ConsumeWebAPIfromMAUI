@@ -30,6 +30,10 @@ Open a command prompt in your computer and enter the command below:
 
 First, you need to create the database and tables needed before running the application.
 
+Best regards,
+
+Bart Van Hoey
+
 Open a **command prompt** in the **root folder of the WebAPI project** and run the commands below to add migrations and apply migrations to the database.
 
 ```bash
